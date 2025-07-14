@@ -1,0 +1,211 @@
+body {
+  position: relative;
+}
+
+.bigBox {
+  background-size: cover;
+  border: 2px solid;
+  border-color: black;
+  height: 80vh;
+  width: 70.3125vw;
+  position: absolute; /* Add this */
+  left: 5%;
+  top: 5vh;
+  overflow: hidden;
+}
+.boxBackground {
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+}
+
+.textBox {
+  font-size: 4.375em;
+  color: rgb(0, 0, 0);
+  width: 7.8125vw;
+  position: absolute;
+  left: 9.1%;
+  top: 28.5%;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal; 
+
+  
+}
+
+.boxImg1,
+.boxImg2,
+.boxImg3,
+.vertImg1,
+.vertImg2,
+.vertImg3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+
+.smallBox,
+.smallBox2,
+.smallBox3,
+.boxImg1,
+.boxImg2,
+.boxImg3,
+.vertBox,
+.vertBox2,
+.vertBox3,
+.vertImg1,
+.vertImg2,
+.vertImg3 {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.smallBox,
+.smallBox2,
+.smallBox3 {
+    border: 3px solid;
+  border-color: rgb(15, 15, 15);
+  border-radius: 10px;
+  display: flex;
+  width: 21.09375vw;
+  height: 30.11093502377179vh;
+  align-items: center;
+  justify-content: center;
+  position: absolute;  
+  line-height: 0;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-clip: padding-box;
+  background-color: black;
+}
+  
+.smallBox {
+  top: -12%;         
+  right: 21.3%;      
+}
+
+
+.smallBox2 {
+  top: 33.5%;          
+  right: 21.3%;      
+}
+
+.smallBox3 { 
+  bottom: -16.5%;        
+  right: 21.3%;      
+}
+
+.vertBox,
+.vertBox2,
+.vertBox3 {
+  width: 8.984375vw;
+  height: 29.31854199683043vh;
+  border-radius: 10px;
+  position: absolute;
+  border: 3px solid;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-clip: padding-box;
+  background-color: black; 
+}
+
+.vertBox {
+  top: -18.5%;          
+  right: 4.1%;      
+}
+
+.vertBox2 {
+  top: 25%;
+  right: 4.1%; 
+}
+
+.vertBox3 {
+  bottom: -5%;
+  right: 4.1%; 
+}
+
+.bigBox{
+  transition: transform 0.2s ease-in-out;
+}
+
+.bigBox:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.smallBox,
+.smallBox2,
+.smallBox3 {
+  transition: transform 0.1s ease-in-out;
+}
+
+.bigBox:hover .smallBox,
+.bigBox:hover .smallBox2,
+.bigBox:hover .smallBox3 {
+  transform: translateY(-20px);
+  transition: transform 0.05s ease-in-out;
+}
+
+.vertBox,
+.vertBox2,
+.vertBox3 {
+  transition: transform 0.02s ease-in-out;
+}
+.bigBox:hover .vertBox,
+.bigBox:hover .vertBox2,
+.bigBox:hover .vertBox3 {
+  transform: translateY(-30px);
+  transition: transform 0.02s ease-in-out;
+}
+
+.smallBox,
+.smallBox2,
+.smallBox3 {
+  transition: transform 1s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.vertBox,
+.vertBox2,
+.vertBox3 {
+  transition: transform 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.bigBox:hover .smallBox,
+.bigBox:hover .smallBox2,
+.bigBox:hover .smallBox3 {
+  transform: translateY(-28px);
+  transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.bigBox:hover .vertBox,
+.bigBox:hover .vertBox2,
+.bigBox:hover .vertBox3 {
+  transform: translateY(-30px);
+  transition: transform 0.42s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.boxBackground {
+  transition: transform 0.9s ease-in-out;
+}
+
+.bigBox:hover .boxBackground {
+  transform: translateY(-10px);
+  transition: transform 0.5s ease-in-out;
+}
